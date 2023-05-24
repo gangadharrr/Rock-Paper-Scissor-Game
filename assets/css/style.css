@@ -6,15 +6,17 @@ body{
 }
 *{
     font-family:'Courier New', Courier, monospace;
-
+    
 }
 .container
 {
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: row;
     background-color: aquamarine;
-    width: 1200px;
-    height: 420px;
+    /* width: 1200px; */
+    /* height: 420px; */
     column-gap: 50px;
 }
 .container-sm
@@ -23,8 +25,8 @@ body{
     flex-direction: column;
     align-items: center ;
     background-color: rgb(120, 167, 255);
-    width: 600px;
-    height: 400px;
+    width: 60%;
+    height: 40%;
     border-radius: 25px;
 }
 .container-sm p{
@@ -33,45 +35,63 @@ body{
 }
 img
 {
-    height: 200px;
-    width: 300px;
+   height:50%;
+   width: 50%;
+    /* max-height:200px;
+    max-width: 200px; */
 }
 .controls
 {
     display: flex;
     flex-direction: row;
-    column-gap: 10px;
+    width: 70%;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     background-color: aquamarine;
+    margin-top:1% ;
+    row-gap: 50px;
 }
 .controls button{
 
-    font-size: large;
+    font-size: 150%;
     font-weight: bold;
+    height: 4cqmax;
+    width:17cqmax;
 }
 .score
 {
     display: flex;
     flex-direction: column;
-    line-height: 1px;
-    margin-bottom:10px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
+    line-height: 1%;
+    margin-bottom:1%;
+    height:50%;
 }
 .score p{
     font-weight: bold;
-    line-height: 1px;
+    line-height: 1%;
+    width: 150%;
 }
 .score button{
     font-weight: bold;
+    width: 150%;
 }
 h1{
     font-size: xx-large;
+    width:100%;
 }
 nav
 {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-content: flex-end;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-content: space-between;
     align-items: center;
-    column-gap: 200px;
-    margin-left: 450px;
+    column-gap: 40%;
+    margin-left: 10%;
+    width: 80%;
 }

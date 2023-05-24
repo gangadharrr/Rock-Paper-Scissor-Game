@@ -8,23 +8,31 @@
     </head>
     <body>
         <nav>
-        <h1>Rock Paper Scissor</h1>
-        <div class="score">
-            <h2>Score</h4>
-            <p>Computer Score: <span id="computer-score-result">0</span></p>
-            <p>Player Score: <span id="player-score-result">0</span></p>
-            <button onclick="restartGame()">Restart Game</button>
-        </div>
+            <div class="score">
+                <div>
+                    <h2>Score</h4>
+                </div>
+                <div>
+                    <p id="computer-score-result">Computer : 0</p>
+                </div>
+                <div>
+                    <p id="player-score-result">Player : 0</p>
+                </div>
+                <div>
+                    <button onclick="restartGame()">Restart Game</button>
+                </div>
+            </div>
+            <h1>Rock Paper Scissor</h1>
         </nav>
         <div class="container">
             <div class="container-sm">
                 <p id="computer-result">Rock</p>
-                <img src="assets/images/computer-rock.jpg" id="computer-result-img"/>
+                <img src="assets/images/computer-rock.png" id="computer-result-img"/>
                 <p id="computer-title">Computer</p>
             </div>
             <div class="container-sm">
                 <p id="player-result">Rock</p>
-                <img src="assets/images/player-rock.jpg" id="player-result-img"/>
+                <img src="assets/images/player-rock.png" id="player-result-img"/>
                 <p id="player-title">Player</p>
             </div>            
         </div>
