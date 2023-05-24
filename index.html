@@ -7,12 +7,31 @@
         <link rel="stylesheet" type="text/css" href="assets\css\style.css" />
     </head>
     <body>
+        <nav>
         <h1>Rock Paper Scissor</h1>
+        <div class="score">
+            <h2>Score</h4>
+            <p>Computer Score: <span id="computer-score-result">0</span></p>
+            <p>Player Score: <span id="player-score-result">0</span></p>
+            <button onclick="restartGame()">Restart Game</button>
+        </div>
+        </nav>
         <div class="container">
             <div class="container-sm">
+                <p id="computer-result">Rock</p>
+                <img src="assets/images/computer-rock.jpg" id="computer-result-img"/>
+                <p id="computer-title">Computer</p>
             </div>
             <div class="container-sm">
+                <p id="player-result">Rock</p>
+                <img src="assets/images/player-rock.jpg" id="player-result-img"/>
+                <p id="player-title">Player</p>
             </div>            
+        </div>
+        <div class="controls">
+            <button value="rock" onclick="gameAction('rock')">Rock</button>
+            <button value="paper" onclick="gameAction('paper')">Paper</button>
+            <button value="scissors" onclick="gameAction('scissors')">Scissors</button>
         </div>
         <script src="assets/js/script.js"></script>
     </body>

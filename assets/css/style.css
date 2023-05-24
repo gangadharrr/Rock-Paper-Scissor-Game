@@ -14,15 +14,64 @@ body{
     flex-direction: row;
     background-color: aquamarine;
     width: 1200px;
-    height: 550px;
+    height: 420px;
     column-gap: 50px;
 }
 .container-sm
 {
     display: flex;
     flex-direction: column;
+    align-items: center ;
     background-color: rgb(120, 167, 255);
     width: 600px;
-    height: 500px;
+    height: 400px;
     border-radius: 25px;
+}
+.container-sm p{
+    font-weight: bold;
+    font-size: xx-large;
+}
+img
+{
+    height: 200px;
+    width: 300px;
+}
+.controls
+{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    background-color: aquamarine;
+}
+.controls button{
+
+    font-size: large;
+    font-weight: bold;
+}
+.score
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+    margin-bottom:10px;
+}
+.score p{
+    font-weight: bold;
+    line-height: 1px;
+}
+.score button{
+    font-weight: bold;
+}
+h1{
+    font-size: xx-large;
+}
+nav
+{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    align-items: center;
+    column-gap: 200px;
+    margin-left: 450px;
 }
