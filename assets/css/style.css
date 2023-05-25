@@ -11,32 +11,39 @@ body{
 }
 .container
 {
-    margin-left: 5%;
-    margin-right: 5%;
     display: flex;
     flex-direction: row;
-    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    height: 100%;
+    width: 100%;
+    
 }
 .container-sm
 {
     display: flex;
     flex-direction: column;
     align-items: center ;
+    justify-content: center;
     background-color: rgb(120, 167, 255);
-    width: 60%;
-    height: 40%;
+    width: 350px;
+    height: 350px;
     border-radius: 25px;
+
 }
 .container-sm p{
     font-weight: bold;
-    font-size: xx-large;
+    font-size: 200%;
     color: #fff;
     text-shadow: 2px 2px 2px #000;
 }
 .container-sm img
 {
-   height:50%;
-   width: 50%;
+   max-height:100%;
+   max-width: 100%;
+   min-width: 40%;
+   min-height: 40%;
 }
 .controls
 {
@@ -112,7 +119,7 @@ nav h1
     display: none;
     flex-direction: row ;
     align-items: center;
-    height: 100%;
+    transform: translateY(200%);
 }
 #confetti h1
 {
@@ -123,4 +130,5 @@ nav h1
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     text-shadow: 5px 5px 0px rgb(255, 67, 111);
+  
 }

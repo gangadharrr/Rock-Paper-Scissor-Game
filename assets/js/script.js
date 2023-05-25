@@ -8,13 +8,16 @@ function playerWin()
   document.getElementById("confetti").style.display="flex";
   document.querySelector("#confetti h1").innerHTML=`! ! ! You Win ! ! !`;
   document.querySelector("body").style.backgroundImage=`url("assets/images/confetti-player.gif")`;
+  document.getElementById("computer-result-img").style.visibility="hidden";
+  document.getElementById("player-result-img").style.visibility="hidden";
 }
 function playerLose()
 {
   document.getElementById("confetti").style.display="flex";
   document.querySelector("#confetti h1").innerHTML=`! ! ! You Lose ! ! !`;
   document.querySelector("body").style.backgroundImage=`url("assets/images/confetti-computer.gif")`;
-
+  document.getElementById("computer-result-img").style.visibility="hidden";
+  document.getElementById("player-result-img").style.visibility="hidden";
 }
     
 function getRndInteger(min, max) {
@@ -97,6 +100,13 @@ function restartGame()
     document.querySelector("body").style.backgroundImage=`none`;
     document.getElementById('player-title').style.color='#fff';
     document.getElementById('computer-title').style.color='#fff';
+    document.getElementById('computer-result-img').src="assets/images/computer.png"
+    document.getElementById('player-result-img').src="assets/images/player.png"
+    document.getElementById('computer-result').innerHTML="SMASH";
+    document.getElementById('player-result').innerHTML="BUTTONS";
+    document.getElementById("computer-result-img").style.visibility="visible";
+    document.getElementById("player-result-img").style.visibility="visible";
+
    computerScore=0;
    playerScore=0;
    document.getElementById('computer-score-result').innerHTML=`Computer : ${computerScore}`;
