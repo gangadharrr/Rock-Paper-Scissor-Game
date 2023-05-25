@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-size: contain, cover;
 }
 *{
     font-family:'Courier New', Courier, monospace;
@@ -14,9 +15,6 @@ body{
     margin-right: 5%;
     display: flex;
     flex-direction: row;
-    background-color: aquamarine;
-    /* width: 1200px; */
-    /* height: 420px; */
     column-gap: 50px;
 }
 .container-sm
@@ -32,13 +30,13 @@ body{
 .container-sm p{
     font-weight: bold;
     font-size: xx-large;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000;
 }
-img
+.container-sm img
 {
    height:50%;
    width: 50%;
-    /* max-height:200px;
-    max-width: 200px; */
 }
 .controls
 {
@@ -48,7 +46,6 @@ img
     align-content: space-evenly;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: aquamarine;
     margin-top:2% ;
     row-gap: 50px;
 }
@@ -91,18 +88,39 @@ nav
     justify-content: space-between;
     align-content: space-between;
     align-items: center;
-    /* column-gap: 20%; */
     margin-left: 10%;
     width: 70%;
 }
 nav img
 {
-    height:30px;
-    width:30px;
+    height:40px;
+    width:40px;
 }
 nav h1
 {
     display: flex;
     flex-wrap: wrap;
-    column-gap: 1%;
+    column-gap: 3%;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 5px 5px 0px rgb(255, 67, 111);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+#confetti{
+    position: absolute ;
+    display: none;
+    flex-direction: row ;
+    align-items: center;
+    height: 100%;
+}
+#confetti h1
+{
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:50px;
+    font-weight: bolder;
+    color: #fff;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 5px 5px 0px rgb(255, 67, 111);
 }
