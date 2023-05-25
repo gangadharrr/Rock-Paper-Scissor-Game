@@ -60,8 +60,23 @@ body{
 
     font-size: 150%;
     font-weight: bold;
-    height: 4cqmax;
-    width:17cqmax;
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
+    background-color: rgb(120, 167, 255);
+}
+.controls button:disabled{
+    font-size: 150%;
+    font-weight: bold;
+    height: 70px;
+    width:70px;
+    border-radius: 50%;
+    background-color: rgb(255, 67, 111);
+}
+.controls img
+{
+    height:40px;
+    width:40px;       
 }
 .score
 {

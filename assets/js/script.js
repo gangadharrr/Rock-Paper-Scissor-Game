@@ -86,8 +86,12 @@ function gameAction(playerValue)
   }
   if(playerScore==5 || computerScore==5)
   {
-    // alert(`!!!!!!!!${computerScore==5?'Computer':'Player'} Wins!!!!!!!!`);
     computerScore==5?playerLose():playerWin();
+    let buttons=document.querySelectorAll(".controls button");
+    for(var button of buttons)
+    {
+      button.disabled=true;
+    }
     setTimeout(()=>{restartGame();},3000);
     return
   }
@@ -96,6 +100,11 @@ function gameAction(playerValue)
 
 function restartGame()
 {
+    let buttons=document.querySelectorAll(".controls button");
+    for(var button of buttons)
+    {
+      button.disabled=false;
+    }
     document.getElementById("confetti").style.display="none";
     document.querySelector("body").style.backgroundImage=`none`;
     document.getElementById('player-title').style.color='#fff';
